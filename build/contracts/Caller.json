@@ -31,14 +31,14 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506101e5806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063205282f014610051578063e30081a014610068575b600080fd5b34801561005d57600080fd5b506100666100ab565b005b34801561007457600080fd5b506100a9600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610176565b005b7fb15addec328b0945a4919485a548f5fd7cb2ffaa83717f694c8bc39c1bec329b60405160405180910390a16000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663826926796040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401600060405180830381600087803b15801561015c57600080fd5b505af1158015610170573d6000803e3d6000fd5b50505050565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a723058206a9db9678e83cff6bfc947f0686af978021ab18db7e5b7efb0ff73db03d3e4500029",
-  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063205282f014610051578063e30081a014610068575b600080fd5b34801561005d57600080fd5b506100666100ab565b005b34801561007457600080fd5b506100a9600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610176565b005b7fb15addec328b0945a4919485a548f5fd7cb2ffaa83717f694c8bc39c1bec329b60405160405180910390a16000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663826926796040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401600060405180830381600087803b15801561015c57600080fd5b505af1158015610170573d6000803e3d6000fd5b50505050565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a723058206a9db9678e83cff6bfc947f0686af978021ab18db7e5b7efb0ff73db03d3e4500029",
-  "sourceMap": "50:221:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;50:221:1;;;;;;;",
-  "deployedSourceMap": "50:221:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;194:71;;8:9:-1;5:2;;;30:1;27;20:12;5:2;194:71:1;;;;;;113:73;;8:9:-1;5:2;;;30:1;27;20:12;5:2;113:73:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;194:71;227:7;;;;;;;;;;237:6;;;;;;;;;;;:18;;;:20;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;237:20:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;237:20:1;;;;194:71::o;113:73::-;174:5;158:6;;:22;;;;;;;;;;;;;;;;;;113:73;:::o",
-  "source": "pragma solidity ^0.4.18;\n\nimport \"./Callee.sol\";\n\ncontract Caller {\n\n   event Test1();\n\n   Callee callee;\n   \n   function setAddress(address _addr) public {\n\tcallee = Callee(_addr);\n   }\n   \n   function doCall() public {\n\temit Test1();\n\tcallee.doSomething(); \t\n   }\n   \n}\n",
-  "sourcePath": "C:\\Projects\\everdragons\\trontest\\eventbug\\contracts\\Caller.sol",
+  "bytecode": "0x608060405234801561001057600080fd5b506101a7806100206000396000f30060806040526004361061004b5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663205282f08114610050578063e30081a014610067575b600080fd5b34801561005c57600080fd5b50610065610095565b005b34801561007357600080fd5b5061006573ffffffffffffffffffffffffffffffffffffffff6004351661013f565b6040517fb15addec328b0945a4919485a548f5fd7cb2ffaa83717f694c8bc39c1bec329b90600090a160008054604080517f82692679000000000000000000000000000000000000000000000000000000008152905173ffffffffffffffffffffffffffffffffffffffff9092169263826926799260048084019382900301818387803b15801561012557600080fd5b505af1158015610139573d6000803e3d6000fd5b50505050565b6000805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff929092169190911790555600a165627a7a723058209dbbe45213f79d338d7efd9ccb3eade0f62b0ad91fbb96b75da3e2b463b259fa0029",
+  "deployedBytecode": "0x60806040526004361061004b5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663205282f08114610050578063e30081a014610067575b600080fd5b34801561005c57600080fd5b50610065610095565b005b34801561007357600080fd5b5061006573ffffffffffffffffffffffffffffffffffffffff6004351661013f565b6040517fb15addec328b0945a4919485a548f5fd7cb2ffaa83717f694c8bc39c1bec329b90600090a160008054604080517f82692679000000000000000000000000000000000000000000000000000000008152905173ffffffffffffffffffffffffffffffffffffffff9092169263826926799260048084019382900301818387803b15801561012557600080fd5b505af1158015610139573d6000803e3d6000fd5b50505050565b6000805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff929092169190911790555600a165627a7a723058209dbbe45213f79d338d7efd9ccb3eade0f62b0ad91fbb96b75da3e2b463b259fa0029",
+  "sourceMap": "54:236:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;54:236:1;;;;;;;",
+  "deployedSourceMap": "54:236:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;208:74;;8:9:-1;5:2;;;30:1;27;20:12;5:2;208:74:1;;;;;;123:75;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;123:75:1;;;;;;;208:74;242:7;;;;;;;253:6;;;:20;;;;;;;;:6;;;;;:18;;:20;;;;;;;;;;:6;;:20;;;5:2:-1;;;;30:1;27;20:12;5:2;253:20:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;253:20:1;;;;208:74::o;123:75::-;169:6;:22;;-1:-1:-1;;169:22:1;;;;;;;;;;;;123:75::o",
+  "source": "pragma solidity ^0.4.18;\r\n\r\nimport \"./Callee.sol\";\r\n\r\ncontract Caller {\r\n\r\n   event Test1();\r\n\r\n   Callee callee;\r\n   \r\n   function setAddress(address _addr) public {\r\n\tcallee = Callee(_addr);\r\n   }\r\n   \r\n   function doCall() public {\r\n\temit Test1();\r\n\tcallee.doSomething(); \t\r\n   }\r\n   \r\n}\r\n",
+  "sourcePath": "C:\\Projects\\everdragons\\trontest\\eventTest\\contracts\\Caller.sol",
   "ast": {
-    "absolutePath": "/C/Projects/everdragons/trontest/eventbug/contracts/Caller.sol",
+    "absolutePath": "/C/Projects/everdragons/trontest/eventTest/contracts/Caller.sol",
     "exportedSymbols": {
       "Caller": [
         43
@@ -59,13 +59,13 @@
         "src": "0:24:1"
       },
       {
-        "absolutePath": "/C/Projects/everdragons/trontest/eventbug/contracts/Callee.sol",
+        "absolutePath": "/C/Projects/everdragons/trontest/eventTest/contracts/Callee.sol",
         "file": "./Callee.sol",
         "id": 14,
         "nodeType": "ImportDirective",
         "scope": 44,
         "sourceUnit": 12,
-        "src": "26:22:1",
+        "src": "28:22:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -92,9 +92,9 @@
               "id": 15,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "83:2:1"
+              "src": "89:2:1"
             },
-            "src": "72:14:1"
+            "src": "78:14:1"
           },
           {
             "constant": false,
@@ -102,7 +102,7 @@
             "name": "callee",
             "nodeType": "VariableDeclaration",
             "scope": 43,
-            "src": "91:13:1",
+            "src": "99:13:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -115,7 +115,7 @@
               "name": "Callee",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 11,
-              "src": "91:6:1",
+              "src": "99:6:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_Callee_$11",
                 "typeString": "contract Callee"
@@ -128,7 +128,7 @@
             "body": {
               "id": 29,
               "nodeType": "Block",
-              "src": "155:31:1",
+              "src": "165:33:1",
               "statements": [
                 {
                   "expression": {
@@ -145,7 +145,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 18,
-                      "src": "158:6:1",
+                      "src": "169:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_Callee_$11",
                         "typeString": "contract Callee"
@@ -163,7 +163,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 20,
-                          "src": "174:5:1",
+                          "src": "185:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -182,7 +182,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 11,
-                        "src": "167:6:1",
+                        "src": "178:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_contract$_Callee_$11_$",
                           "typeString": "type(contract Callee)"
@@ -196,13 +196,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "167:13:1",
+                      "src": "178:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_Callee_$11",
                         "typeString": "contract Callee"
                       }
                     },
-                    "src": "158:22:1",
+                    "src": "169:22:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_Callee_$11",
                       "typeString": "contract Callee"
@@ -210,7 +210,7 @@
                   },
                   "id": 28,
                   "nodeType": "ExpressionStatement",
-                  "src": "158:22:1"
+                  "src": "169:22:1"
                 }
               ]
             },
@@ -232,7 +232,7 @@
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
                   "scope": 30,
-                  "src": "133:13:1",
+                  "src": "143:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -243,7 +243,7 @@
                     "id": 19,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "133:7:1",
+                    "src": "143:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -253,17 +253,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "132:15:1"
+              "src": "142:15:1"
             },
             "payable": false,
             "returnParameters": {
               "id": 22,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "155:0:1"
+              "src": "165:0:1"
             },
             "scope": 43,
-            "src": "113:73:1",
+            "src": "123:75:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -272,7 +272,7 @@
             "body": {
               "id": 41,
               "nodeType": "Block",
-              "src": "219:46:1",
+              "src": "233:49:1",
               "statements": [
                 {
                   "eventCall": {
@@ -285,7 +285,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 16,
-                      "src": "227:5:1",
+                      "src": "242:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$__$returns$__$",
                         "typeString": "function ()"
@@ -299,7 +299,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "227:7:1",
+                    "src": "242:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -307,7 +307,7 @@
                   },
                   "id": 35,
                   "nodeType": "EmitStatement",
-                  "src": "222:12:1"
+                  "src": "237:12:1"
                 },
                 {
                   "expression": {
@@ -322,7 +322,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 18,
-                        "src": "237:6:1",
+                        "src": "253:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Callee_$11",
                           "typeString": "contract Callee"
@@ -336,7 +336,7 @@
                       "memberName": "doSomething",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 10,
-                      "src": "237:18:1",
+                      "src": "253:18:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
                         "typeString": "function () external"
@@ -350,7 +350,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "237:20:1",
+                    "src": "253:20:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -358,7 +358,7 @@
                   },
                   "id": 40,
                   "nodeType": "ExpressionStatement",
-                  "src": "237:20:1"
+                  "src": "253:20:1"
                 }
               ]
             },
@@ -374,30 +374,30 @@
               "id": 31,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "209:2:1"
+              "src": "223:2:1"
             },
             "payable": false,
             "returnParameters": {
               "id": 32,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "219:0:1"
+              "src": "233:0:1"
             },
             "scope": 43,
-            "src": "194:71:1",
+            "src": "208:74:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 44,
-        "src": "50:221:1"
+        "src": "54:236:1"
       }
     ],
-    "src": "0:272:1"
+    "src": "0:292:1"
   },
   "legacyAST": {
-    "absolutePath": "/C/Projects/everdragons/trontest/eventbug/contracts/Caller.sol",
+    "absolutePath": "/C/Projects/everdragons/trontest/eventTest/contracts/Caller.sol",
     "exportedSymbols": {
       "Caller": [
         43
@@ -418,13 +418,13 @@
         "src": "0:24:1"
       },
       {
-        "absolutePath": "/C/Projects/everdragons/trontest/eventbug/contracts/Callee.sol",
+        "absolutePath": "/C/Projects/everdragons/trontest/eventTest/contracts/Callee.sol",
         "file": "./Callee.sol",
         "id": 14,
         "nodeType": "ImportDirective",
         "scope": 44,
         "sourceUnit": 12,
-        "src": "26:22:1",
+        "src": "28:22:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -451,9 +451,9 @@
               "id": 15,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "83:2:1"
+              "src": "89:2:1"
             },
-            "src": "72:14:1"
+            "src": "78:14:1"
           },
           {
             "constant": false,
@@ -461,7 +461,7 @@
             "name": "callee",
             "nodeType": "VariableDeclaration",
             "scope": 43,
-            "src": "91:13:1",
+            "src": "99:13:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -474,7 +474,7 @@
               "name": "Callee",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 11,
-              "src": "91:6:1",
+              "src": "99:6:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_Callee_$11",
                 "typeString": "contract Callee"
@@ -487,7 +487,7 @@
             "body": {
               "id": 29,
               "nodeType": "Block",
-              "src": "155:31:1",
+              "src": "165:33:1",
               "statements": [
                 {
                   "expression": {
@@ -504,7 +504,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 18,
-                      "src": "158:6:1",
+                      "src": "169:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_Callee_$11",
                         "typeString": "contract Callee"
@@ -522,7 +522,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 20,
-                          "src": "174:5:1",
+                          "src": "185:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -541,7 +541,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 11,
-                        "src": "167:6:1",
+                        "src": "178:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_contract$_Callee_$11_$",
                           "typeString": "type(contract Callee)"
@@ -555,13 +555,13 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "167:13:1",
+                      "src": "178:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_Callee_$11",
                         "typeString": "contract Callee"
                       }
                     },
-                    "src": "158:22:1",
+                    "src": "169:22:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_Callee_$11",
                       "typeString": "contract Callee"
@@ -569,7 +569,7 @@
                   },
                   "id": 28,
                   "nodeType": "ExpressionStatement",
-                  "src": "158:22:1"
+                  "src": "169:22:1"
                 }
               ]
             },
@@ -591,7 +591,7 @@
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
                   "scope": 30,
-                  "src": "133:13:1",
+                  "src": "143:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -602,7 +602,7 @@
                     "id": 19,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "133:7:1",
+                    "src": "143:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -612,17 +612,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "132:15:1"
+              "src": "142:15:1"
             },
             "payable": false,
             "returnParameters": {
               "id": 22,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "155:0:1"
+              "src": "165:0:1"
             },
             "scope": 43,
-            "src": "113:73:1",
+            "src": "123:75:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -631,7 +631,7 @@
             "body": {
               "id": 41,
               "nodeType": "Block",
-              "src": "219:46:1",
+              "src": "233:49:1",
               "statements": [
                 {
                   "eventCall": {
@@ -644,7 +644,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 16,
-                      "src": "227:5:1",
+                      "src": "242:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$__$returns$__$",
                         "typeString": "function ()"
@@ -658,7 +658,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "227:7:1",
+                    "src": "242:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -666,7 +666,7 @@
                   },
                   "id": 35,
                   "nodeType": "EmitStatement",
-                  "src": "222:12:1"
+                  "src": "237:12:1"
                 },
                 {
                   "expression": {
@@ -681,7 +681,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 18,
-                        "src": "237:6:1",
+                        "src": "253:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Callee_$11",
                           "typeString": "contract Callee"
@@ -695,7 +695,7 @@
                       "memberName": "doSomething",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 10,
-                      "src": "237:18:1",
+                      "src": "253:18:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
                         "typeString": "function () external"
@@ -709,7 +709,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "237:20:1",
+                    "src": "253:20:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -717,7 +717,7 @@
                   },
                   "id": 40,
                   "nodeType": "ExpressionStatement",
-                  "src": "237:20:1"
+                  "src": "253:20:1"
                 }
               ]
             },
@@ -733,39 +733,39 @@
               "id": 31,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "209:2:1"
+              "src": "223:2:1"
             },
             "payable": false,
             "returnParameters": {
               "id": 32,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "219:0:1"
+              "src": "233:0:1"
             },
             "scope": 43,
-            "src": "194:71:1",
+            "src": "208:74:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 44,
-        "src": "50:221:1"
+        "src": "54:236:1"
       }
     ],
-    "src": "0:272:1"
+    "src": "0:292:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.4.24-develop.2018.8.28+commit.3ba0cdec.mod.Emscripten.clang"
   },
   "networks": {
-    "*": {
+    "43": {
       "events": {},
       "links": {},
-      "address": "4112a6dd2e827491f8d93fe55ea824ed355f9f47bd"
+      "address": "41f6dbb29e74460da5d9a298a823dc692eb944eb2c"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-15T16:53:47.916Z"
+  "updatedAt": "2018-12-05T12:37:37.015Z"
 }
